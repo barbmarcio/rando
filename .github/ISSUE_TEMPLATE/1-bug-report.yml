@@ -35,20 +35,16 @@ body:
       description: Provide the SDK version (e.g., 0.2.0).
     validations:
       required: true
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       **Environment (please complete the following information):**
-  #       - OS: [e.g. iOS, Android, Windows]
-  #       - Browser [e.g. Chrome, Safari] (or runtime) [e.g. Node.js, .NET, Java]
-  #       - Version [e.g. 22]
-  - type: input
+  - type: markdown
     attributes:
       value: |
         **Environment (please complete the following information):**
         - OS: [e.g. iOS, Android, Windows]
         - Browser [e.g. Chrome, Safari] (or runtime) [e.g. Node.js, .NET, Java]
         - Version [e.g. 22]
+  - type: input
+    id: environment
+    attributes:
       label: Environment
   - type: textarea
     id: additional-context
